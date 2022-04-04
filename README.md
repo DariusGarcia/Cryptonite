@@ -4,4 +4,4 @@ Side project that will let users create their own account and add cryptos to the
 
 Login Screen:
 
-![image](https://user-images.githubusercontent.com/90431421/161474704-18d982b6-6956-449e-995a-19265edeb7c8.png)
+![image](https://user-images.githubusercontent.com/90431421/161483057-a14c3ac1-0a53-463e-a3ec-41903a42524a.png)
