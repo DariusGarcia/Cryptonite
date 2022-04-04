@@ -11,10 +11,10 @@ android:background="@color/black"
 tools:context="LoginActivity">
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/et_username"
         android:layout_width="255dp"
         android:layout_height="35dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="160dp"
         android:background="#A62B2A2A"
         android:fontFamily="@font/maven_pro"
         android:hint="Username"
@@ -26,15 +26,14 @@ tools:context="LoginActivity">
         android:textColorHint="#C8737171"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Crypto" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/et_password"
         android:layout_width="255dp"
         android:layout_height="35dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="28dp"
         android:background="#A62B2A2A"
         android:fontFamily="@font/maven_pro"
         android:hint="Password"
@@ -45,38 +44,35 @@ tools:context="LoginActivity">
         android:textColorHint="#B76C6C6C"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/et_username" />
 
     <Button
-        android:id="@+id/create_account"
-        android:layout_width="114dp"
-        android:layout_height="42dp"
+        android:id="@+id/signup_bt"
+        android:layout_width="139dp"
+        android:layout_height="58dp"
         android:layout_gravity="start"
         android:layout_marginBottom="48dp"
         android:backgroundTint="#FFAB00"
-        android:enabled="false"
+        android:enabled="true"
         android:fontFamily="@font/maven_pro"
-
         android:text="Sign up"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintTop_toBottomOf="@+id/login_bt"
+        app:layout_constraintVertical_bias="0.296" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/login_bt"
         android:layout_width="155dp"
         android:layout_height="61dp"
         android:layout_gravity="start"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#D50000"
-        android:enabled="false"
+        android:enabled="true"
         android:fontFamily="@font/maven_pro"
         android:text="Login"
         android:textColor="#000000"
@@ -84,7 +80,7 @@ tools:context="LoginActivity">
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <ProgressBar
     android:id="@+id/loading"
@@ -95,8 +91,8 @@ tools:context="LoginActivity">
     android:layout_marginBottom="64dp"
     android:visibility="gone"
     app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="@+id/password"
-    app:layout_constraintStart_toStartOf="@+id/password"
+    app:layout_constraintEnd_toEndOf="@+id/et_password"
+    app:layout_constraintStart_toStartOf="@+id/et_password"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_bias="0.3" />
 
@@ -104,14 +100,15 @@ tools:context="LoginActivity">
         android:id="@+id/Crypto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/bebasneueregular"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/gothambold"
         android:letterSpacing="-0.04"
         android:padding="5dp"
         android:text="Crypto Watch"
         android:textColor="#FFAB00"
-        android:textSize="75dp"
+        android:textSize="55sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
@@ -119,15 +116,15 @@ tools:context="LoginActivity">
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:fontFamily="@font/bebasneueregular"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gothambold"
         android:letterSpacing="-0.02"
         android:text="Welcome to"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#D50000"
-        android:textSize="50dp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -1,3 +1,10 @@
 <resources>
+
     <string name="app_name">CryptoWatch</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- back4app: Paste BOTH strings as required -->
+    <string name="back4app_app_id">niwotxm4OJdiA7bBmqJjbyGAiLREs3gFS95In6U0</string>
+    <string name="back4app_client_key">15oPdQXihe9mHR6IWgVYietu7eoWWpMUQpY4Tg7B</string>
+
 </resources>
