@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         // Check if there's a user logged in
-        //If there is, take them to MainActivity
+//        //If there is, take them to MainActivity
         if (ParseUser.getCurrentUser() != null) {
             goToMainActivity()
         }
