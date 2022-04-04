@@ -8,4 +8,4 @@ Login Screen:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/hnisgPg8kGNhMbIL3q/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/3JjVzZPvEij5VNiEev/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
