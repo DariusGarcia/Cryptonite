@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         // Check if there's a user logged in
-        // If there is, take them to MainActivity
+        //If there is, take them to MainActivity
         if (ParseUser.getCurrentUser() != null) {
             goToMainActivity()
         }
@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
         fun View.blink2(
             times: Int = Animation.INFINITE,
             duration: Long = 2000L,
-            offset: Long = 750L,
+            offset: Long = 1000L,
             minAlpha: Float = 0.0f,
             maxAlpha: Float = 1.0f,
             repeatMode: Int = Animation.REVERSE
@@ -58,7 +58,23 @@ class LoginActivity : AppCompatActivity() {
 
         fun View.blink3(
             times: Int = Animation.INFINITE,
-            duration: Long = 1000L,
+            duration: Long = 1750L,
+            offset: Long = 1500L,
+            minAlpha: Float = 0.0f,
+            maxAlpha: Float = 1.0f,
+            repeatMode: Int = Animation.REVERSE
+        ) {
+            startAnimation(AlphaAnimation(minAlpha, maxAlpha).also {
+                it.duration = duration
+                it.startOffset = offset
+                it.repeatMode = repeatMode
+                it.repeatCount = times
+            })
+        }
+
+        fun View.blink4(
+            times: Int = Animation.INFINITE,
+            duration: Long = 1500L,
             offset: Long = 2000L,
             minAlpha: Float = 0.0f,
             maxAlpha: Float = 1.0f,
@@ -75,6 +91,10 @@ class LoginActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.welcome).blink1(2)
         findViewById<TextView>(R.id.Crypto).blink2(2)
         findViewById<TextView>(R.id.myText).blink3()
+        findViewById<TextView>(R.id.et_username).blink4(0)
+        findViewById<TextView>(R.id.et_password).blink4(0)
+        findViewById<TextView>(R.id.login_bt).blink4(0)
+        findViewById<TextView>(R.id.signup_bt).blink4(0)
 
 
 
