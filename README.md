@@ -2,7 +2,7 @@
 
 Side project that will let users create their own account and add cryptos to their watch list. 
 
-Real time data from Coin API.
+Real time data from CoinAPI.io
 
 Login Screen:
 
